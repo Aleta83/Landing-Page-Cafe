@@ -175,6 +175,7 @@ label{
 }
 /*parte 2*/
 .description-article{
+    width:100%;
    text-align: center;
    padding: 30px 70px;
    justify-content: center;
@@ -313,3 +314,164 @@ label{
     position: relative;
     margin-top: 20px
 } 
+/*parte 6*/
+
+.redes{
+    padding: 0px 20px 40px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 30px;
+}
+.conteiner-persons{
+    width: 100%;
+    margin: auto;
+}
+ .persons-column img{
+    width: 100%;
+    height: 250px;
+}
+.persons-column{
+    margin: 1%;
+}
+
+.persons .conteiner-persons{
+    display: grid;
+}
+/*parte 7*/
+
+.info-formular1 h4{
+    font-size: 20px;
+    text-align: center;
+    padding: 35px ;
+    
+    
+}
+.conteiner-formular {
+    width: 100%;
+    min-height:400px;
+    background-color: #EFEBE2;
+  
+}
+
+.info-formular1 form{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.info-formular1  form input{
+    min-width:150px ;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.info-formular1 input[type="submit"]{
+   background-color: #D6A372;
+   border-radius: 10px;
+   border: 0px;  
+} 
+/*parte 8*/
+.pie-pagina{
+    width: 100%;
+    background-color: #e6ccb2;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box h2{
+    margin-top: 25px;
+    font-size: 22px;
+}
+.pie-pagina .grupo-1 .box p{
+    margin-bottom: 10px;
+}
+.pie-pagina .box h2{
+    margin-top: 20px;
+    text-align: center;
+}
+.pie-pagina .box  p{
+    line-height: 20px;
+    text-align: center;
+}
+.pie-pagina .box .contact{
+    line-height: 30px;
+    text-align: center;
+}
+.pie-pagina .grupo-1 .red-social{
+    text-align: center;
+    margin-top: 20px;
+}
+.red-social h2{
+    text-align: center;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    text-align: center;
+    transition: all 300ms ease;
+
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: #b07d62;
+
+}    
+
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: #b07d62;
+}
+.grupo-2{
+    text-align: center;
+}
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+    
+}
+
+@media(min-width:520px){
+    .persons .conteiner-persons{
+        grid-template-columns: repeat(3,33.3%);
+    }
+}
+@media(min-width:728px){
+    .persons .conteiner-persons{
+        grid-template-columns: repeat(4,25%);
+    }
+}
+@media(min-width:1024px){
+    .persons .conteiner-persons{
+        grid-template-columns: repeat(6,16.6%);
+    }
+    .conteiner-persons {
+            width: 1024px;
+    }
+}
+@media(min-width:1200px){
+    .conteiner-persons{
+        width: 1200px;
+    }  
+}
