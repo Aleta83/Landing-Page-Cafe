@@ -112,7 +112,7 @@ label{
     label{
         display: block;
         color: #fff;
-        font-size: 30px;
+        font-size: 25px;
         cursor: pointer;
         transition: 0,3s;
         transition-property: color;
@@ -142,6 +142,9 @@ label{
         margin-bottom: 50px;
         letter-spacing: 2px;
     }
+    #check:checked ~header label .menu-btn{
+        display: none;
+    }
     #check:checked ~header label .close-btn{
         z-index: 2;
         display: block;
@@ -164,31 +167,34 @@ label{
     }
 }
 @media (max-with: 560px){
+    
     .content .info h2{
-        font-size: 35px;
+        font-size: 20px;
         font-weight: 600;
     }
     .content .info p{
-        font-size: 20px;
+        font-size: 15px;
         font-weight: 500;
     }
 }
+
 /*parte 2*/
 .description-article{
     width:100%;
    text-align: center;
-   padding: 30px 70px;
+   padding: 30px 30px;
    justify-content: center;
 }
 .description-article h2{
     padding-bottom: 30px;
     font-weight: 900;
-    font-size: 35px;
+    font-size: 3vh;
 }
 .description-article p{
-    font-size: 25px;
+    font-size: 2.5vh;
     font-weight: 600;
 }
+
 /*parte 3*/
 .contenedor-circular{
     display: flex;
@@ -198,7 +204,9 @@ label{
     justify-content: space-around;   
 }
 .part1{
-    max-width: 400px;
+    max-width: 33.3%;
+    text-align: center;
+    align-items: center;
     padding: 5px;
     margin-top: 60px;
     font-weight: 600;
@@ -235,7 +243,7 @@ label{
     justify-content: space-around;      
 }
 .card{
-    width: 300px;
+    max-width: 250px;
     height: 500px;
     margin: 15px;
     margin-bottom: 10px;
@@ -281,7 +289,7 @@ label{
 }
 .experts h3{
     text-align: center;
-    font-size: 40px;
+    font-size: 4vh;
     
 }
 .content-testimonial {
@@ -300,7 +308,7 @@ label{
 }
 .content-testimonial .testimonials{
     width: 100%;
-    max-width: 340px;
+    max-width: 250px;
     margin: auto;
     
 
@@ -321,6 +329,9 @@ label{
     text-align: center;
     font-weight: 900;
     font-size: 30px;
+}
+.redes h3{
+    font-size: 4vh;
 }
 .conteiner-persons{
     width: 100%;
@@ -370,7 +381,7 @@ label{
 .info-formular1 input[type="submit"]{
    background-color: #D6A372;
    border-radius: 10px;
-   border: 0px;  
+   border: 0px; 
 } 
 /*parte 8*/
 .pie-pagina{
@@ -433,15 +444,11 @@ label{
 }
 .pie-pagina .grupo-1 .red-social a:hover{
     color: #b07d62;
-
-}    
-
-.pie-pagina .grupo-1 .red-social a:hover{
-    color: #b07d62;
 }
 .grupo-2{
     text-align: center;
 }
+
 @media screen and (max-width:800px) {
     .pie-pagina .grupo-1{
         width: 90%;
